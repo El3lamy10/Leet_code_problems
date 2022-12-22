@@ -4,9 +4,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        res=[]
         for i in nums:
-            if i in res:
+            if nums.count(i)==len(nums)/2:
                 return i
-            res.append(i)
-        return res
